@@ -1,4 +1,3 @@
-/* RESET & GLOBAL STYLES */
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -100,6 +99,17 @@ body {
     transition: 0.5s;
 }
 
+#Pengenalan #Contact a#putih {
+    background-color: #F9F7F7;
+    color: #112D4E;
+}
+
+#Pengenalan #Contact a#putih:hover {
+    background-color: #112D4E;
+    color: #F9F7F7;
+}
+
+
 #Pengenalan #Contact a:hover {
     background-color: #ffffff;
     color: #000;
@@ -147,8 +157,8 @@ body {
 
 .background {
     background: linear-gradient(135deg, #112D4E, #3F72AF);
-    border-radius: 30px 30px 50px 50px; /* Membuat sudut lebih lembut */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    border-radius: 30px 30px 50px 50px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Styling untuk Project */
@@ -156,8 +166,6 @@ body {
     text-align: center;
     margin: 50px auto;
     padding: 50px 100px;
-    /* background: linear-gradient(135deg, #112D4E, #3F72AF); */
-   
 }
 
 .project1 {
@@ -177,7 +185,7 @@ body {
 .project-text {
     max-width: 600px;
     text-align: justify;
-    color: #F8F9FA; /* Warna teks lebih kontras */
+    color: #F8F9FA; 
     background: rgba(255, 255, 255, 0.1); /* Efek transparan */
     padding: 20px;
     border-radius: 10px;
@@ -213,53 +221,51 @@ body {
 .social-media-container {
     text-align: center;
     margin: 50px auto;
-    padding: 20px;
-    /* background: linear-gradient(135deg, #112D4E, #3F72AF); */
+    padding: 30px;
     color: white;
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    width: 100%;
 }
 
 .social-media-container h2 {
-    font-size: 2rem;
-    margin-top: 20px;
-    margin-bottom: -20px;
-    color: #f5ebeb ;
+    font-size: 1.8rem;
+    margin-bottom: -30px;
 }
 
 .social-media-slider {
+    display: flex;
     overflow: hidden;
-    white-space: nowrap;
     position: relative;
-    max-width: 100%;
+    white-space: nowrap;
     padding: 15px 0;
 }
 
 .social-icons {
     display: flex;
     gap: 40px;
-    animation: scrollLoop 12s linear infinite;
     width: max-content;
     align-items: center;
+    animation: scrollAlternate 10s ease-in-out infinite alternate;
 }
 
 .social-icons img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     transition: transform 0.4s, box-shadow 0.4s;
 }
 
 .social-icons img:hover {
     transform: scale(1.3);
-   
 }
 
-
-
-@keyframes scrollLoop {
+/* Animasi bolak-balik */
+@keyframes scrollAlternate {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    100% { transform: translateX(-25%); }
 }
+
 
 
 
@@ -374,6 +380,11 @@ hr.animated-hr {
 
 hr.animated-hr.active {
     width: 80%;
+}
+
+mark {
+    background-color: #FFD700;
+    color: #112D4E;
 }
 
 
